@@ -4,7 +4,12 @@
 #include "scope_timer.h"
 
 
-int fib(int i) { if (i <= 1) return i; else return (fib(i - 1) + fib(i - 2)) % 100; }
+int fib(int i) {
+    if (i <= 1)
+        return i;
+    else
+        return (fib(i - 1) + fib(i - 2)) % 100;
+}
 
 volatile int foo = 0;
 
